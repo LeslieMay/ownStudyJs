@@ -1,0 +1,21 @@
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+selenium-debug.log
+.settings/
+.svn/
+.externalToolBuilders/
+.compiled/
+.next/
+logs/
+build/
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+website/jz.youyuwo.com/5/taobaoshopspread/taobao.rar

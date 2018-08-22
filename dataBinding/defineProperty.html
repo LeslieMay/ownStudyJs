@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input/>
+</body>
+<script>
+    let obj = {
+        name:'leslie',
+        detail:{
+            age:"1"
+        }
+    }
+    function observe(obj){
+        if(typeof obj !== 'object')return;
+        for(let i in obj){
+            defineReactive(obj,i,obj[i])
+            observe(obj[i])
+        }
+    }   
+    
+    function defineReactive(target,key,value){
+        Object.defineProperty(target,key,{
+            enumerable:true,// 是否可枚举
+            get(){
+                return value
+            },
+            set(newValue){
+                alert('更新视图')
+                console.log(newValue)
+                value = newValue
+            }
+        })
+    }
+    observe(obj)
+</script>
+</html>

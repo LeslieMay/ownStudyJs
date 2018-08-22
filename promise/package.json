@@ -1,0 +1,9 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0"
+  }
+}

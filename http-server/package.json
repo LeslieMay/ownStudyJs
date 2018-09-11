@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "les-server": "bin/www.js"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.17.1",

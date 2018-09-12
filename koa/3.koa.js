@@ -1,4 +1,4 @@
-let Koa = require('koa');
+let Koa = require('./myKoa/application');
 
 let app = new Koa();
 

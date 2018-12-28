@@ -2,6 +2,11 @@
   "dependencies": {
     "http-proxy": "^1.17.0",
     "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
     "ykit": "^0.8.3-beta.0"
+  },
+  "devDependencies": {
+    "antd-mobile": "^2.2.5"
   }
 }

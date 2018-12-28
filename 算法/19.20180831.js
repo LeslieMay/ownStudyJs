@@ -11,15 +11,15 @@
 // 如果有多个峰值，只要随便返回一个就可以，不需要考虑顺序。
 
 const peak = (arr) => {
-    if(arr.length === 1) return 0
+    if(arr.length === 1) return arr[0]
     for(let i = 0 , l = arr.length; i < l ; i ++){
         if((i == 0 && arr[i] > arr[i+1]) || (arr[i-1]<=arr[i] && arr[i] >= arr[i+1]) || (i == l-1 && arr[i] > arr[i-1])) {
-            return i
+            return arr[i]
         }
     }
 }
 
-console.log(peak([1,2,3,4,5,6]))  // 5(6所在的位置）
-console.log(peak([1,3,5,7,4,2])) // 3（7所在的位置）
-console.log(peak([1,2,3,2,7,6])) // 2(3所在的位置)
-console.log(peak([1,1,1,1,1,1])) // 任何一个都是峰值
+console.log(peak([8, 10, 20, 80, 100, 200, 400, 500, 3, 2, 1]))  // 5(6所在的位置）
+console.log(peak([120, 100, 80, 20, 0])) // 3（7所在的位置）
+console.log(peak([0, 20, 48, 80])) // 2(3所在的位置)
+console.log(peak([1])) // 任何一个都是峰值

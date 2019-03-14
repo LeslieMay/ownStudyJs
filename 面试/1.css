@@ -1,0 +1,31 @@
+/* 1 */
+.parentDiv{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* 2 */
+.parentDiv{
+    font-size: 0;
+    text-align: center;
+}
+.child{
+    width: 30%;
+    display: inline-block;
+    margin-right: 2.5%;
+}
+.child:last-child{
+    margin-right: 0;
+}
+/* 3 */
+.parentDiv::after{
+    clear: both;
+}
+.child{
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    height: 100px;
+    background: red;
+}
